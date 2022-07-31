@@ -17,45 +17,77 @@
             <p class="h1" id='titulo'>Jogo da velha</p>
         </section>
 
-        <section id="players-form" class="d-flex flex-column mb-3">
-            <form action="#" class="text-center"> 
+        <section class="d-flex flex-column mb-3">
+            <form action="#" class="text-center" id="players-form"> 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Jogador 1:</span>
-                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1" id="player_1_name">
+                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1" id="player-1-name">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Jogador 2:</span>
-                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1" id="player_2_name">
+                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1" id="player-2-name">
                 </div>
                 <button id="init-game-button" class="btn btn-success gray_background col-6">Iniciar</button>
+                <button class="btn btn-warning col-6 m-2 mx-auto d-none text-nowrap" id="update-players">Atualizar</button>
             </form>
-            <button class="btn btn-warning col-8 m-2 mx-auto d-none" id="change_players_names" id="start-update-players">Alterar jogadores</button>
+            <button class="btn btn-warning col-12 m-2 mx-auto d-none text-nowrap" id="change-players-names">Alterar jogadores</button>
         </section>
 
-        <section class="board text-center align-items-center justify-content-center m-2">
+        <div class="d-inline-flex col-8 mb-3 d-none" id="scoreboard">
+            <div class="card mx-auto col-6">
+                <p class="h5 card-title text-center m-2 mb-0">Placar</p>
+                <hr class="mb-0">
+                <div class="card-body flex-fill d-inline-flex mt-0 mb-0 flex-nowrap">
+                    <div class="container-fluid d-inline-flex align-items-stretch">
+                        <section class="col-6">
+                            <div class="card card-body flex-fill">
+                                <p class="h6 card-title text-nowrap text-center text-truncate" id="first-player-name"></p>
+                                <hr>
+                                <p class="fw-bold h5 text-center" id="first-player-score"></p>
+                            </div>
+                        </section>
+                        <section class="col-6">
+                            <div class="card card-body flex-fill">
+                                <p class="h6 card-title text-center text-nowrap text-truncate" id="second-player-name"></p>
+                                <hr>
+                                <p class="fw-bold h5 text-center" id="second-player-score"></p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="mb-3 text-nowrap text-center mx-auto col-12">
+                    <button class="btn btn-secondary" id="reset-scoreboard">Zerar placar</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="text-success fw-bold text-uppercase d-none" id="announcer-section">{Vez do jogador}</section>
+
+        <section class="board flex-nowrap text-center align-items-center justify-content-center m-2">
             <div class="row">
-                <div class="col-sm tile esquerda-cima" id="cell-0-0"></div>
-                <div class="col-sm tile centro-cima" id="cell-1-0"></div>
-                <div class="col-sm tile direita-cima" id="cell-2-0"></div>
+                <div class="col-sm tile esquerda-cima text-center text-light" id="cell-0-0"></div>
+                <div class="col-sm tile centro-cima text-center text-light" id="cell-1-0"></div>
+                <div class="col-sm tile direita-cima text-center text-light" id="cell-2-0"></div>
             </div>
             <div class="row">
-                <div class="col-sm tile centro-esquerda" id="cell-0-1"></div>
-                <div class="col-sm tile" id="cell-1-1"></div>
-                <div class="col-sm tile centro-direita" id="cell-2-1"></div>
+                <div class="col-sm tile centro-esquerda text-center text-light" id="cell-0-1"></div>
+                <div class="col-sm tile text-center text-light" id="cell-1-1"></div>
+                <div class="col-sm tile centro-direita text-center text-light" id="cell-2-1"></div>
             </div>
             <div class="row">
-                <div class="col-sm tile esquerda-baixo" id="cell-0-2"></div>
-                <div class="col-sm tile centro-baixo" id="cell-1-2"></div>
-                <div class="col-sm tile direita-baixo" id="cell-2-2"></div>
+                <div class="col-sm tile esquerda-baixo text-center text-light" id="cell-0-2"></div>
+                <div class="col-sm tile centro-baixo text-center text-light" id="cell-1-2"></div>
+                <div class="col-sm tile direita-baixo text-center text-light" id="cell-2-2"></div>
             </div>
-            <div class="row mt-3 text-nowrap text-center mx-auto">
-                <button class="btn btn-outline-warning">Resetar partida</button>
-            </div>
+        </section>
+
+        <div class="row mt-3 text-nowrap text-center mx-auto">
+            <button class="btn btn-outline-warning d-none" id="reset-match">Resetar partida</button>
+        </div>
         </section>
     </main>
     
-    <script src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
 </body>
 </html>

@@ -6,9 +6,15 @@
     padding: 0;
 }
 
+body{
+    height: 100vh;
+    weight: 100%;
+    background-color: #3b173d;
+}
+
 .background {
     background-color: #3b173d;
-    height: 100vh;
+    height: 100%;
 }
 
 .row {
@@ -67,4 +73,6 @@
     color: #eeeeee;
 }
 
-https://fonts.google.com/
+.minimum-width.minimum-width{
+    min-width: 30%;
+}
