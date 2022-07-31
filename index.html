@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/tic-tac-toe.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+    <main class="d-flex flex-column justify-content-center align-items-center background">
+        <section class="title text-center mb-3">
+            <p class="h1" id='titulo'>Jogo da velha</p>
+        </section>
+
+        <section id="players-form" class="d-flex flex-column mb-3">
+            <form action="#" class="text-center"> 
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Jogador 1:</span>
+                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1" id="player_1_name">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Jogador 2:</span>
+                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1" id="player_2_name">
+                </div>
+                <button id="init-game-button" class="btn btn-success gray_background col-6">Iniciar</button>
+            </form>
+            <button class="btn btn-warning col-8 m-2 mx-auto d-none" id="change_players_names" id="start-update-players">Alterar jogadores</button>
+        </section>
+
+        <section class="board text-center align-items-center justify-content-center m-2">
+            <div class="row">
+                <div class="col-sm tile esquerda-cima" id="cell-0-0"></div>
+                <div class="col-sm tile centro-cima" id="cell-1-0"></div>
+                <div class="col-sm tile direita-cima" id="cell-2-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm tile centro-esquerda" id="cell-0-1"></div>
+                <div class="col-sm tile" id="cell-1-1"></div>
+                <div class="col-sm tile centro-direita" id="cell-2-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm tile esquerda-baixo" id="cell-0-2"></div>
+                <div class="col-sm tile centro-baixo" id="cell-1-2"></div>
+                <div class="col-sm tile direita-baixo" id="cell-2-2"></div>
+            </div>
+            <div class="row mt-3 text-nowrap text-center mx-auto">
+                <button class="btn btn-outline-warning">Resetar partida</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>

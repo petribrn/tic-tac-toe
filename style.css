@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Righteous&family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-color: #3b173d;
+    height: 100vh;
+}
+
+.row {
+    max-width: 300px;
+}
+
+.tile {
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 50px;
+    border: 1px solid #999999
+}
+
+.esquerda-cima {
+    border-left: 2px solid #999999;
+    border-top: 2px solid #999999;
+    border-top-left-radius: 5%;
+}
+
+.centro-cima {
+    border-top: 2px solid #999999;
+}
+
+.direita-cima {
+    border-right: 2px solid #999999;
+    border-top: 2px solid #999999;
+    border-top-right-radius: 5%;
+}
+
+.centro-esquerda {
+    border-left: 2px solid #999999;
+}
+
+.centro-direita {
+    border-right: 2px solid #999999;
+}
+
+.esquerda-baixo {
+    border-left: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    border-bottom-left-radius: 5%;
+}
+
+.centro-baixo {
+    border-bottom: 2px solid #999999;
+}
+
+.direita-baixo {
+    border-right: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    border-bottom-right-radius: 5%;
+}
+
+#titulo{
+    font-family: 'Righteous', 'Roboto', 'Montserrat';
+    color: #eeeeee;
+}
+
+https://fonts.google.com/
