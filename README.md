@@ -17,7 +17,7 @@ O projeto conta com apenas uma página HTML que importa um arquivo CSS com estil
     - Estrutura HTML com uso de classes Bootstrap 5.
 - Carolina Pacheco da Silva (21104291)
     - Design, layout, cores, fontes e estilização.
-- Guilherme Cavalieri
+- Guilherme Cavalieri (21103571)
     - CSS.
 - Vinícius de Araújo Portela (21105982)
     - Javascript, classe TicTacToe.
