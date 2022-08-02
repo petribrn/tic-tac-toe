@@ -8,7 +8,7 @@ O projeto conta com apenas uma página HTML que importa um arquivo CSS com estil
 
 - Bruno Petri (21106217)
 - Carolina Pacheco da Silva (21104291)
-- Guilherme Cavalieri
+- Guilherme Cavalieri (21103571)
 - Vinícius de Araújo Portela (21105982)
 
 ## Divisão de tarefas
